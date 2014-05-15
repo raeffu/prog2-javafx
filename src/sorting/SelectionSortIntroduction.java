@@ -1,4 +1,4 @@
-package ch.leafit.sorterAnimation;
+package sorting;
 
 public final class SelectionSortIntroduction {
 	
@@ -26,8 +26,8 @@ public final class SelectionSortIntroduction {
 	}
 	
 	public static void main(String[] l){
-		int[] ia = Tools.genArray(10);
-		selectionSort(ia);
-		printIt(ia);
+//		int[] ia = Tools.genArray(10);
+//		selectionSort(ia);
+//		printIt(ia);
 	}
 }
