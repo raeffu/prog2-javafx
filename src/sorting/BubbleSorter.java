@@ -1,7 +1,5 @@
 package sorting;
 
-import java.util.Random;
-
 import javafx.application.Platform;
 
 public final class BubbleSorter extends Thread {
@@ -15,17 +13,8 @@ public final class BubbleSorter extends Thread {
     _controller = controller;
     _speed = speed;
 
-    _numbers = genArray(10);
+    _numbers = Tools.genArray(10);
     start();
-  }
-
-  private static int[] genArray(int n) {
-    Random rand = new Random();
-
-    int[] ia = new int[n];
-    for (int i = 0; i < n; i++)
-      ia[i] = Math.abs(rand.nextInt() % 200);
-    return ia;
   }
 
   @Override

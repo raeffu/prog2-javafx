@@ -52,6 +52,9 @@ public class MainController {
     if (SortMethods.BUBBLE.toString().equals(method)) {
       new BubbleSorter(this, speed);
     }
+    else if (SortMethods.SELECT.toString().equals(method)) {
+      new SelectionSorter(this, speed);
+    }
 
   }
   
@@ -86,7 +89,33 @@ public class MainController {
       x += deltaX;
     }
   }
+  
+  public void drawShapes(int[] ia, int blue, int current, int minIndex) {
+    // clear canvas
+    gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
 
+    int deltaX = (int) ((canvas.getWidth() / ia.length));
+    int x = 10;
+    
+    gc.setStroke(Color.BLACK);
+    gc.setLineWidth(2);
+    gc.strokeLine(0, 0, canvas.getWidth(), 0);
+    gc.setFill(Color.GREEN);
+    gc.setLineWidth(5);
+    
+    for (int i = 0; i < ia.length; i++) {
+      if (i <= blue)
+        gc.setStroke(Color.BLUE);
+      else
+        gc.setStroke(Color.BLACK);
+      if (i == current)
+        gc.setStroke(Color.RED);
+      gc.strokeLine(x, 0, x, ia[i]);
+      gc.fillText("" + ia[i], x + 5, 20);
+      x += deltaX;
+    }
+  }
+  
   @FXML
   void initialize() {
     assert btnStart != null : "fx:id=\"btnStart\" was not injected: check your FXML file 'Main.fxml'.";

@@ -10,10 +10,10 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.canvas.Canvas?>
 
-<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorting.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorting.MainController">
   <!-- TODO Add Nodes -->
   <children>
-    <HBox layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="472.0">
+    <HBox layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="383.0">
       <children>
         <Button fx:id="btnStart" mnemonicParsing="false" onAction="#actStart" prefWidth="54.0" text="Start" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Method:">
@@ -31,9 +31,9 @@
           </items>
         </ComboBox>
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Speed" HBox.margin="$x1" />
-        <TextField fx:id="txtSpeed" prefWidth="200.0" HBox.margin="$x1" />
+        <TextField fx:id="txtSpeed" prefHeight="25.0" prefWidth="76.0" HBox.margin="$x1" />
       </children>
     </HBox>
-    <Canvas fx:id="canvas" height="436.0" layoutX="14.0" layoutY="53.0" width="472.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="53.0" />
+    <Canvas fx:id="canvas" height="338.0" layoutX="14.0" layoutY="53.0" width="383.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="53.0" />
   </children>
 </AnchorPane>
