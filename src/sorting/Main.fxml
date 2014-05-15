@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.Canvas?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sorting.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <HBox layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="472.0">
+      <children>
+        <Button fx:id="btnStart" mnemonicParsing="false" onAction="#actStart" prefWidth="54.0" text="Start" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Method:">
+          <HBox.margin>
+            <Insets left="10.0" fx:id="x1" />
+          </HBox.margin>
+        </Text>
+        <ComboBox fx:id="cbSort" HBox.margin="$x1">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Speed" HBox.margin="$x1" />
+        <TextField fx:id="txtSpeed" prefWidth="200.0" HBox.margin="$x1" />
+      </children>
+    </HBox>
+    <Canvas fx:id="canvas" height="436.0" layoutX="14.0" layoutY="53.0" width="472.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="53.0" />
+  </children>
+</AnchorPane>

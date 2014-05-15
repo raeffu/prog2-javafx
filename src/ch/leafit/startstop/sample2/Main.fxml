@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" styleClass="root2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.leafit.startstop.Controller">
+<children><HBox layoutX="32.0" layoutY="24.0" prefHeight="49.0" prefWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+<children><Button fx:id="buStart" mnemonicParsing="false" onAction="#actStart" styleClass="button2" text="StartNewThread">
+<HBox.margin>
+<Insets left="10.0" right="10.0" />
+</HBox.margin></Button>
+<Button fx:id="buStop" layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#actStop" styleClass="button2" text="StopCurrentRunningThread" />
+</children></HBox><TextArea fx:id="txaDisplay" layoutX="67.0" layoutY="102.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+</children></AnchorPane>

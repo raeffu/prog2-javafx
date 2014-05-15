@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="250.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="clock.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <HBox fx:id="hbox1" layoutX="31.0" layoutY="71.0" prefHeight="100.0" prefWidth="200.0">
+      <children>
+        <Label fx:id="lbHours" prefHeight="70.0" prefWidth="47.0" text="HH" />
+        <Label id="lbSeperator1" fx:id="lbSeparator1" prefHeight="70.0" prefWidth="20.0" text=":" />
+        <Label fx:id="lbMinutes" prefHeight="70.0" prefWidth="47.0" text="MM" />
+        <Label fx:id="lbSeparator2" prefHeight="70.0" prefWidth="20.0" text=":" />
+        <Label fx:id="lbSeconds" prefHeight="70.0" prefWidth="47.0" text="SS" />
+      </children>
+    </HBox>
+    <Button fx:id="btnStart" layoutX="250.0" layoutY="85.0" mnemonicParsing="false" onAction="#buttonClicked" text="Start" />
+    <Button id="btnStart" fx:id="btnStop" layoutX="250.0" layoutY="115.0" mnemonicParsing="false" onAction="#buttonClicked" text="Stop" />
+    <Button id="btnStart" fx:id="btnLap" layoutX="253.0" layoutY="144.0" mnemonicParsing="false" onAction="#buttonClicked" text="Lap" />
+  </children>
+</AnchorPane>

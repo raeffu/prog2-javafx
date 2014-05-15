@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="334.0" prefWidth="500.0" styleClass="root2" stylesheets="application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.leafit.sorterAnimation.Controller">
+	<children>
+		<HBox layoutX="50.0" layoutY="14.0" prefHeight="52.0" prefWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+			<children>
+				<Button fx:id="buStart" mnemonicParsing="false" onAction="#actStart" styleClass="buttonAnym" text="Start">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</Button>
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textAnym" text="Choose method: " />
+				<ComboBox fx:id="comboSorter" prefWidth="150.0">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</ComboBox>
+				<Text layoutX="71.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textAnym" text="Speed [ms]: " />
+				<TextField fx:id="txfSpeed" prefHeight="31.0" prefWidth="51.0" promptText="500" styleClass="textFieldAnym" />
+			</children>
+		</HBox>
+		<Canvas fx:id="canvas" height="389.0" layoutX="106.0" layoutY="110.0" width="480.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0" />
+	</children>
+</AnchorPane>

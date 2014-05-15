@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" styleClass="root2"
+	stylesheets="application.css" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.leafit.clock_RunnableBased.Controller">
+	<children>
+		<HBox layoutX="40.0" layoutY="49.0" prefHeight="49.0" prefWidth="480.0"
+			AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+			<children>
+				<Button fx:id="buStart" mnemonicParsing="false" onAction="#actStart"
+					styleClass="button2" text="Start">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</Button>
+				<Button fx:id="buLap" layoutX="10.0" layoutY="10.0"
+					mnemonicParsing="false" onAction="#actLap" styleClass="button2"
+					text="Lap">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</Button>
+				<Button fx:id="buStop" layoutX="71.0" layoutY="10.0"
+					mnemonicParsing="false" onAction="#actStop" styleClass="button2"
+					text="Stop" />
+			</children>
+		</HBox>
+		<HBox layoutX="10.0" layoutY="126.0" prefHeight="49.0" prefWidth="480.0"
+			AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+			<children>
+				<Label fx:id="laDisplay" text="00:00:00">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</Label>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>

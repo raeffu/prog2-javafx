@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="425.0" styleClass="root2"
+	stylesheets="@application.css" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.leafit.trafficlight.Controller">
+	<children>
+		<VBox alignment="CENTER" layoutX="180.0" layoutY="62.0"
+			prefHeight="600.0" prefWidth="389.0" AnchorPane.bottomAnchor="60.0"
+			AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+			AnchorPane.topAnchor="10.0">
+			<children>
+				<Circle fx:id="cRed" fill="#09090a" radius="100.0" stroke="BLACK"
+					strokeType="INSIDE">
+					<VBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</VBox.margin>
+				</Circle>
+				<Circle fx:id="cOrange" fill="#09090a" radius="100.0" stroke="BLACK"
+					strokeType="INSIDE">
+					<VBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</VBox.margin>
+				</Circle>
+				<Circle fx:id="cGreen" fill="#09090a" radius="100.0" stroke="BLACK"
+					strokeType="INSIDE">
+					<VBox.margin>
+						<Insets left="50.0" right="50.0" />
+					</VBox.margin>
+				</Circle>
+			</children>
+		</VBox>
+		<HBox layoutX="12.5" layoutY="570.0" prefHeight="100.0"
+			prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+			AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+			AnchorPane.topAnchor="620.0">
+			<children>
+				<Button fx:id="buRed" mnemonicParsing="false" onAction="#actRed"
+					text="RED">
+					<HBox.margin>
+						<Insets left="10.0" right="10.0" />
+					</HBox.margin>
+				</Button>
+				<Button fx:id="buGreen" layoutX="20.0" layoutY="10.0"
+					mnemonicParsing="false" onAction="#actGreen" text="GREEN">
+					<HBox.margin>
+						<Insets right="10.0" />
+					</HBox.margin>
+				</Button>
+				<Button fx:id="buOrange" layoutX="78.0" layoutY="10.0"
+					mnemonicParsing="false" onAction="#actOrange" text="ORANGE" />
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>
