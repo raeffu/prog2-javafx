@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="aPane" prefHeight="545.0" prefWidth="875.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ch.leafit.parallelTransition.Controller">
+	<children>
+		<Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0"
+			fill="DODGERBLUE" height="10.0" layoutX="9.0" layoutY="9.0" stroke="BLACK"
+			strokeType="INSIDE" width="10.0" />
+		<Text fx:id="text" fill="#970b0b" layoutX="321.0" layoutY="369.0"
+			strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning">
+			<font>
+				<Font name="System Bold" size="40.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

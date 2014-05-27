@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="root" prefHeight="604.0" prefWidth="935.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gallery.ImageDisplayController">
+	<children>
+		<ImageView fx:id="preview" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" />
+		<Text boundsType="VISUAL" layoutX="78.9140625" scaleX="3.451882434679509" scaleY="1.0" stroke="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0x000000ff 100.0%)" strokeDashOffset="6.0" strokeMiterLimit="8.3" strokeType="OUTSIDE" strokeWidth="0.0" text="Pictures Display" textOrigin="BOTTOM" wrappingWidth="91.63590578734875" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="79.0">
+			<font>
+				<Font name="Playbill" size="30.0" />
+			</font>
+		</Text>
+	</children>
+	<stylesheets>
+		<URL value="@imageDisplayer.css" />
+	</stylesheets>
+</AnchorPane>

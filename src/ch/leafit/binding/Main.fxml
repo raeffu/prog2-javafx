@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="root" prefHeight="184.0" prefWidth="316.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="ch.leafit.binding.Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="211.0" prefHeight="38.0" prefWidth="480.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="laDisplay" text="                             ">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txfDisplay" editable="false" prefHeight="31.0" prefWidth="158.0" />
+         </children>
+      </HBox>
+      <Text fx:id="txtMessage" fill="#972626" layoutX="10.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="             " AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <HBox alignment="CENTER_LEFT" layoutX="128.0" layoutY="106.0" prefHeight="45.0" prefWidth="480.0" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label text="Input number:">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txfInput" onAction="#actTextField" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
